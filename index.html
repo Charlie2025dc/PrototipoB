@@ -1,0 +1,598 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>Datos del equipo</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/xd.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js" type="text/javascript"></script>
+<script> 
+function audio (e) { 
+var reproducir = new Audio();
+reproducir.src = e;
+reproducir.play();
+}
+window.addEventListener("load",function() {
+	document.querySelectorAll("body button")[0].addEventListener("click",function() {
+		audio("alarmas/Hola.wav")
+    },false);
+	document.querySelectorAll("body button")[1].addEventListener("click",function() {
+		audio("alarmas/Gracias.wav")
+    },false);
+	document.querySelectorAll("body button")[2].addEventListener("click",function() {
+		audio("alarmas/No, gracias.wav")
+    },false);
+	document.querySelectorAll("body button")[3].addEventListener("click",function() {
+		audio("alarmas/bip.mpeg")
+    },false);
+	document.querySelectorAll("body button")[4].addEventListener("click",function() {
+		audio("alarmas/bip.mpeg")
+    },false);
+	document.querySelectorAll("body button")[5].addEventListener("click",function() {
+		audio("alarmas/bip.mpeg")
+    },false);
+	document.querySelectorAll("body button")[6].addEventListener("click",function() {
+		audio("alarmas/bip.mpeg")
+    },false);
+	document.querySelectorAll("body button")[7].addEventListener("click",function() {
+		audio("alarmas/bip.mpeg")
+    },false);
+	document.querySelectorAll("body button")[8].addEventListener("click",function() {
+		audio("alarmas/bip.mpeg")
+    },false);
+	document.querySelectorAll("body button")[9].addEventListener("click",function() {
+		audio("alarmas/bip.mpeg")
+    },false);
+	document.querySelectorAll("body button")[10].addEventListener("click",function() {
+		audio("alarmas/bip.mpeg")
+    },false);
+	document.querySelectorAll("body button")[11].addEventListener("click",function() {
+		audio("alarmas/bip.mpeg")
+    },false);
+	document.querySelectorAll("body button")[12].addEventListener("click",function() {
+		audio("alarmas/bip.mpeg")
+    },false);
+	document.querySelectorAll("body button")[13].addEventListener("click",function() {
+		audio("alarmas/bip.mpeg")
+    },false);
+	document.querySelectorAll("body button")[14].addEventListener("click",function() {
+		audio("alarmas/bip.mpeg")
+    },false);
+	document.querySelectorAll("body button")[15].addEventListener("click",function() {
+		audio("alarmas/bip.mpeg")
+    },false);
+	document.querySelectorAll("body button")[16].addEventListener("click",function() {
+		audio("alarmas/bip.mpeg")
+    },false);
+	document.querySelectorAll("body button")[17].addEventListener("click",function() {
+		audio("alarmas/bip.mpeg")
+    },false);
+	document.querySelectorAll("body button")[18].addEventListener("click",function() {
+		audio("alarmas/bip.mpeg")
+    },false);
+	document.querySelectorAll("body button")[19].addEventListener("click",function() {
+		audio("alarmas/bip.mpeg")
+    },false);
+	},false);  </script>
+  
+<script src="phonegap.js"></script><!-- necesario*/ -->
+
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head> 
+
+<body onLoad="MM_preloadImages('images/Captura-de-pantalla-2013-09-27-a-las-20.06.46.png','images/Batalla-de-5-de-Mayo.png','imagenes/tumblr_inline_o5prdjJ1Ou1u5zgr8_1280.jpg','imagenes/359e8656784df251a2277345ad437c6c.jpg','imagenes/tumblr_inline_mjeecosDzA1qz4rgp.jpg')">
+<div data-role="page" id="Principal" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"   data-back-btn-theme="b">
+      <h1 align="center">Applicación para sordomudos</h1>
+      </div>
+
+
+<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+    <li class="ui-first-child ui-last-child">
+       <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           
+           <h2>Inicio</h2>
+           <p>¡Accede y mira el contenido de ésta app!</p>
+       </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#PaginaI" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           <h2>Información:</h2>
+           <p>¡Mira la información acerca de los programadores!</p>
+       </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina14" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+          <h2>Enlaces de investigación</h2>
+          <p>¡Toda la información que se usó para la investigación y creación del la app</p>
+       </a>
+     </li>  
+        
+     </ul>
+
+   
+    
+ <!-- Start WOWSlider.com BODY section --><script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+    <div data-role="footer" align="center" data-theme="a" data-position="fixed"> 
+      <div></div>
+      <div>
+         <h4>Prototipo 2018  </h4>
+      </div>        
+    </div>
+   </div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+        <h1 align="center">Inicio</h1>
+     </div>
+     
+    <img src="imagenes/5a9541df33510e809d2d0c3f1621c400.jpg" width="100%" height="40%">
+<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+    <li class="ui-first-child ui-last-child">
+       <a href="#PaginaS" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           
+           <h2>Sordos</h2>
+       </a>
+    </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#PaginaSM" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           <h2>Sordomudos</h2>
+       </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#PaginaM" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+          <h2>Mudos</h2>
+       </a>
+     </li>  
+  </ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+  
+      
+  <div data-role="footer" data-theme="a" data-position="fixed">
+    <h4 align="center">¡Prototipo 2018!</h4>
+     </div>
+   </div>
+   
+   
+<div data-role="page" id="PaginaS" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h1 align="center">Sordos</h1>
+      </div>
+      <img src="imagenes/tumblr_static_avatar.png" width="100%" height="50%">
+<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+    <li class="ui-first-child ui-last-child">
+       <a href="#PaginaTeE" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           
+           <h2>Teclado especial</h2>
+       </a>
+    </li>
+     
+       
+  </ul>
+      <div data-role="footer" data-theme="a" data-position="fixed">
+    <h4 align="center">¡Prototipo 2018!</h4>
+     </div>    
+   </div>
+   
+   
+<div data-role="page" id="PaginaM" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h1 align="center">Mudos</h1>
+      </div>
+      <img src="imagenes/5540462170_d5297d9ce8_z.jpg" width="100%" height="40%">
+<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+    <li class="ui-first-child ui-last-child">
+       <a href="#PaginaAS" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           
+           <h2>¡Sonidos y alertas!</h2>
+       </a>
+    </li>
+     
+       
+  </ul>
+      <div data-role="footer" data-theme="a" data-position="fixed">
+    <h4 align="center">¡Prototipo 2018!</h4>
+     </div>    
+   </div>
+   
+   
+<div data-role="page" id="PaginaI" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h1> </h1>
+      </div>
+      <div data-role="content" align="center">
+        <div>
+          <div data-role="collapsible" data-content-theme="false">
+        <div>          </div>
+          </div>
+          <div data-role="collapsible" data-content-theme="false">
+            <h3> <p>Información<br>
+            </h3>
+            <h3>Nombres:
+            </h3>
+            <p>Carlos Alberto Aguilar Pérez <br>
+              Santiago Roberto Gordiano Ramírez<br>
+              Pedro Aguilar Méndez
+              <br>
+            </p>
+           <h3> <p>Grado y grupo:<br></h3>
+              5° E
+            </p>
+            <h3> <p>Especialidad<br></h3>
+              Programación.
+              <h3> <p>Asesor:<br></h3>
+            José Antonio Gómez Hernández</p>
+          </div>
+          <div data-role="collapsible" data-content-theme="false">          </div>
+        </div>
+      </div>
+      <div data-role="footer" data-theme="a" data-position="fixed">
+    <h4 align="center">¡Prototipo 2018!</h4>
+     </div>    
+   </div>
+   
+<div data-role="page" id="PaginaAS" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h1 align="center">Sonidos/Alertas</h1>
+      </div>
+  <img src="imagenes/bucle_magne_tico.jpeg" width="100%" height="40%">
+<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+     <li class="ui-first-child ui-last-child">
+       <a href="#PaginaSal" data-role="button"  class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           
+           <h2>Saludos</h2>
+       </a>
+       <a href="#PaginaCot" data-role="button" " class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           
+           <h2>Palabras cotidianas</h2>
+       </a>
+       <a href="#PaginaEx" data-role="button" " class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           
+           <h2>Expresiones.</h2>
+       </a>
+    </li>
+     
+       
+  </ul>
+  <!-- Start WOWSlider.com BODY section -->
+	
+<script type="text/javascript" src="engine2/wowslider.js"></script>
+<script type="text/javascript" src="engine2/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+      <div data-role="footer" data-theme="a" data-position="fixed">
+    <h4 align="center">¡Prototipo 2018!</h4>
+     </div>    
+   </div>
+<div data-role="page" id="PaginaSal" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h2 align="center"><span id="Manifestaciones_durante_el_D.C3.ADa_de_la_Tierra2">Saludos</span></h2>
+      </div>
+      <div data-role="content" align="center">
+        <div>
+          <div data-role="collapsible" data-content-theme="false">
+        <div>          </div>
+          </div>
+          <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image25','','imagenes/tumblr_inline_o5prdjJ1Ou1u5zgr8_1280.jpg',1)"><img src="imagenes/tumblr_static_tumblr_static_457y7mtrndkw8kco48ws4ko0c_640.gif" width="100%" height="30%" id="Image25"></a>
+<div>
+  
+  
+  
+     <br>
+
+<button>
+         
+  <h2>Hola</h2>
+         
+ 
+      </button>
+  <br>
+
+<button>
+   
+       <h2>Gracias</h2>
+          
+   
+    </button>
+  <br>
+  <button>
+         
+  <h2>No, gracias</h2>
+         
+ 
+      </button>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+          <p><br>
+          </p>
+        </div>
+        </div>
+      </div>
+      <div data-role="footer" data-theme="a" data-position="fixed">
+    <h4 align="center">¡Prototipo 2018!</h4>
+     </div>    
+   </div>
+<div data-role="page" id="PaginaCot" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h2 align="center">Palabras cotidianas</h2>
+      </div>
+      <div data-role="content" align="center">
+        <div>
+          <div data-role="collapsible" data-content-theme="false">
+        <div>          </div>
+          </div>
+          <img src="imagenes/tumblr_static_7us3vb3994w0w88c0s0go0ccc_640_v2.png" width="100%" height="35%">s
+          <br>
+s
+<div> </div>
+        </div>
+      </div>
+      <div data-role="footer" data-theme="a" data-position="fixed">
+    <h4 align="center">¡Prototipo 2018!</h4>
+     </div>    
+   </div>
+<div data-role="page" id="PaginaEx" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h2 align="center">Expresiones</h2>
+      </div>
+      <div data-role="content" align="center">
+        <div>
+          <div data-role="collapsible" data-content-theme="false">
+        <div>          </div>
+          </div>
+          <img src="imagenes/empatia-tres.png" width="100%" height="35%">
+<div>
+  
+  
+  
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+
+          
+          <p>&nbsp;</p>
+          <p><br>
+          </p>
+      </div>
+        </div>
+      </div>
+      <div data-role="footer" data-theme="a" data-position="fixed">
+    <h4 align="center">¡Prototipo 2018!</h4>
+     </div>    
+   </div>
+<div data-role="page" id="PaginaSM" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h1 align="center">Sordomudos</h1>
+      </div>
+  <img src="imagenes/tumblr_static_2853556641_0e5d83e362_z.jpg" width="100%" height="40%">
+<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+     <li class="ui-first-child ui-last-child">
+       <a href="#PaginaDic" data-role="button" " class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           
+           <h2>Diccionario sordomudo</h2>
+       </a>
+       <a href="#Dib" data-role="button" " class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           
+           <h2>¡Dibuja lo que quieres expresar!</h2>
+       </a>
+       
+    </li>
+     
+       
+  </ul>
+ 
+      <div data-role="footer" data-theme="a" data-position="fixed">
+    <h4 align="center">¡Prototipo 2018!</h4>
+     </div>    
+   </div>
+
+<div data-role="page" id="PaginaDic" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+        <h1 align="center">Diccionario</h1>
+     </div>
+     
+    <img src="imagenes/5a9541df33510e809d2d0c3f1621c400.jpg" width="100%" height="40%">
+<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+    <li class="ui-first-child ui-last-child">
+       <a href="#PaginaS" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           
+           <h2>Abecedario</h2>
+       </a>
+    </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#PaginaSM" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           <h2>Acciones</h2>
+       </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#PaginaM" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+          <h2>Expresiones.</h2>
+       </a>
+     </li>  
+  </ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+  
+      
+  <div data-role="footer" data-theme="a" data-position="fixed">
+    <h4 align="center">¡Prototipo 2018!</h4>
+     </div>
+   </div>
+<div data-role="page" id="Dib" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+        <h1 align="center">¡Expresa con dibujos!</h1></div>
+     
+    <img src="imagenes/5a9541df33510e809d2d0c3f1621c400.jpg" width="100%" height="40%">
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+  
+      
+  <div data-role="footer" data-theme="a" data-position="fixed">
+    <h4 align="center">¡Prototipo 2018!</h4>
+     </div>
+</div>
+<div data-role="page" id="PaginaTeE" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+        <h1 align="center">¡Teclado especial!</h1></div>
+     
+    <div> <div align="center">
+      <p><img src="imagenes/5a9541df33510e809d2d0c3f1621c400.jpg" width="45%" height="40%"> </p>
+      <p>xd </p>
+    </div>
+    <div data-role="collapsible" data-content-theme="false">
+          <h3> <p>Imágenes del día de la tierra:
+              <br>
+          </h3>
+          <h3><ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+     <li class="ui-first-child ui-last-child">
+       <div> <div align="center">
+      <p><img src="imagenes/5a9541df33510e809d2d0c3f1621c400.jpg" width="45%" height="40%"> </p>
+      <p>xd </p>
+    </div>
+     </li>
+  
+
+     </li>  
+     </ul></h3>
+        </div>
+    <p>&nbsp;</p>
+<p>&nbsp;</p>
+  
+      
+  <div data-role="footer" data-theme="a" data-position="fixed">
+    <h4 align="center">¡Prototipo 2018!</h4>
+     </div>
+</div>
+<div data-role="page" id="Pagina14" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h2 align="center">¡Enlaces!</h2>
+      </div>
+      <div data-role="content" align="center">
+        <div>
+          <div data-role="collapsible" data-content-theme="false">
+        <div>          </div>
+          </div>
+          <img src="imagenes/tics.jpg" width="100%" height="40%">
+<div>
+  
+  
+  
+  <p>&nbsp;</p>
+  <p>Estos son algunos de los enlaces que hicieron posible hacer éste proyecto:</p>
+<div data-role="collapsible" data-content-theme="false">
+          <h3> <p>Información:<br>
+            ¿Qué es un sordo, un mudo          <br>
+y un sordomudo? <br>
+          </h3>
+          <h3><ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+     <li class="ui-first-child ui-last-child">
+      <a href="https://es.wikipedia.org/wiki/D%C3%ADa_de_la_Tierra" data-role="button" id="beep">
+           <h2>¡Hazme click!</h2>
+         
+       </a>
+     </li>
+  
+
+     </li>  
+     </ul></h3>
+        </div>
+          
+          
+          <div data-role="collapsible" data-content-theme="false">
+          <h3> <p>Noticias referentes a la<br>
+exclusión de las personas<br>
+con dicha discapacidad: <br>
+          </h3>
+          <h3><ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+     <li class="ui-first-child ui-last-child">
+      <a href="http://www.un.org/es/events/biodiversityday/" data-role="button" id="beep">
+           <h2>¡Hazme click!</h2>
+         
+       </a>
+     </li>
+  
+
+     </li>  
+     </ul></h3>
+        </div>
+        <div data-role="collapsible" data-content-theme="false">
+          <h3> <p>Enlace del vídeo donde<br>
+            pudimos aprender a poner<br>
+            un audio a través de Js
+: <br>
+          </h3>
+          <h3><ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+     <li class="ui-first-child ui-last-child">
+      <a href="https://www.ocio.net/estilo-de-vida/ecologismo/que-es-la-conciencia-ecologica/" data-role="button" id="beep">
+           <h2>¡Hazme click!</h2>
+         
+       </a>
+     </li>
+  
+
+     </li>  
+     </ul></h3>
+        </div>
+        <div data-role="collapsible" data-content-theme="false">
+          <h3> <p>Imágenes del día de la tierra:
+              <br>
+          </h3>
+          <h3><ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+     <li class="ui-first-child ui-last-child">
+      <a href="https://www.google.com.mx/search?q=Day+of+the+earth+tumblr&safe=active&source=lnms&tbm=isch&sa=X&ved=0ahUKEwi5tc2O5p3UAhUljVQKHQVzAHkQ_AUICigB&biw=1366&bih=589" data-role="button" id="beep">
+           <h2>¡Hazme click!</h2>
+         
+       </a>
+     </li>
+  
+
+     </li>  
+     </ul></h3>
+        </div>
+        
+        
+        
+          <p><br>
+          </p>
+      </div>
+        </div>
+      </div>
+      <div data-role="footer" data-theme="a" data-position="fixed">
+    <h4 align="center">¡Prototipo 2018!</h4>
+     </div>    
+   </div>
+
+      
+   </div>
+   
+
+</body>
+</html>
