@@ -2,7 +2,11 @@
 <html>
 <head>
 	
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densityDpi=device-dpi" />
 
+    <script src="responsivevoice.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 	<link href="css/jquery.mobile-1.1.1.min.css" rel="stylesheet" type="text/css" />
 	<link href="css/style.css" rel="stylesheet" type="text/css" />
 	<script src="js/cordova-2.0.0.js" type="text/javascript" charset="utf-8"></script>
@@ -997,8 +1001,27 @@ con dicha discapacidad: <br>
         <h1 align="center">¡Teclado especial!</h1></div>
      
     <div> <div align="center">
-      <p><img src="imagenes/5a9541df33510e809d2d0c3f1621c400.jpg" width="45%" height="40%"> </p>
-      <p>&nbsp;</p>
+       <img width="240px" src="http://www.analisisnoverbal.com/wp-content/uploads/2016/01/C%C3%B3mo-gestionar-tu-comunicaci%C3%B3n-no-verbal-en-una-entrevista-de-trabajo-500x383.png" alt="">
+    <p id="text">Hola como estas, esta es una aplicación para la comunicación.</p>
+    <!--<select id="voiceselection"></select>-->
+
+    <input onClick="responsiveVoice.speak($('#text').text(),'Spanish Latin American Female');" type="button" value="Escuchar" />
+    <input onClick="responsiveVoice.pause();" type="button" value="Pausar" />
+    <input onClick="responsiveVoice.resume();" type="button" value="Continuar" />
+    <input onClick="responsiveVoice.cancel();" type="button" value="Cancelar" />
+    <script>
+        //Populate voice selection dropdown
+
+        responsiveVoice.pause();
+
+        responsiveVoice.resume();
+
+        var voicelist = responsiveVoice.getVoices();
+        var vselect = $("#voiceselection");
+        $.each(voicelist, function() {
+            vselect.append($("<option />").val(this.name).text(this.name));
+        });
+    </script>
     </div>
     
     <p>&nbsp;</p>
